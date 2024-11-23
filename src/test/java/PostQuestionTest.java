@@ -90,10 +90,10 @@ public class PostQuestionTest {
             dropdownButton.click();
             Thread.sleep(3000);
 
-        // ค้นหาและคลิกปุ่ม Delete
-        WebElement deleteButton = driver.findElement(By.xpath("//button[.//span[text()='Delete']"));
-        deleteButton.click(); // คลิกปุ่ม
-        Thread.sleep(3000); // หน่วงเวลา 3 วินาทีเพื่อให้เห็นการทำงาน
+            // ค้นหาและคลิกปุ่ม Delete
+            WebElement deleteButton = driver.findElement(By.xpath("//button[.//span[text()='Delete']"));
+            deleteButton.click(); // คลิกปุ่ม
+            Thread.sleep(3000); // หน่วงเวลา 3 วินาทีเพื่อให้เห็นการทำงาน
 
     }
 }
