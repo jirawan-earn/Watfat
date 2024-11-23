@@ -86,11 +86,14 @@ public class PostQuestionTest {
             }
 
             //กดปุ่ม Dropdown <3
-// ค้นหาและคลิกปุ่มที่ระบุ
-        WebElement dropdownButton = driver.findElement(By.xpath("//button[contains(@class, 'Dropdown-toggle') and contains(@class, 'Button--icon') and contains(@class, 'Button--primary') and @aria-haspopup='menu']"));
-        dropdownButton.click(); // คลิกปุ่ม
-        Thread.sleep(3000); // รอ 3 วินาทีเพื่อให้การคลิกทำงาน
+            WebElement dropdownButton = driver.findElement(By.xpath("//button[contains(@class, 'Dropdown-toggle') and contains(@class, 'Button--icon') and contains(@class, 'Button--primary') and @aria-haspopup='menu']"));
+            dropdownButton.click();
+            Thread.sleep(3000);
 
+        // ค้นหาและคลิกปุ่ม Delete
+        WebElement deleteButton = driver.findElement(By.xpath("//button[.//span[text()='Delete']"));
+        deleteButton.click(); // คลิกปุ่ม
+        Thread.sleep(3000); // หน่วงเวลา 3 วินาทีเพื่อให้เห็นการทำงาน
 
     }
 }
