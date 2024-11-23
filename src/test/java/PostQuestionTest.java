@@ -86,9 +86,11 @@ public class PostQuestionTest {
             }
 
             //กดปุ่ม Dropdown <3
-            WebElement DropdownButton = driver.findElement(By.xpath("//button[contains(@class, 'Dropdown-toggle') and contains(@class, 'Button--icon') and @type='button']"));
-            DropdownButton.click();
-            Thread.sleep(3000);
+// ค้นหาและคลิกปุ่มที่ระบุ
+        WebElement dropdownButton = driver.findElement(By.xpath("//button[contains(@class, 'Dropdown-toggle') and contains(@class, 'Button--icon') and contains(@class, 'Button--primary') and @aria-haspopup='menu']"));
+        dropdownButton.click(); // คลิกปุ่ม
+        Thread.sleep(3000); // รอ 3 วินาทีเพื่อให้การคลิกทำงาน
+
 
     }
 }
